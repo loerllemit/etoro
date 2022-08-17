@@ -1,0 +1,1 @@
+web:gunicorn   pnl_etoro:server
