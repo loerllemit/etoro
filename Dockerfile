@@ -1,6 +1,7 @@
 FROM python:3.10-slim
 
 ENV APP_HOME /app
+# ENV PORT 80
 WORKDIR ${APP_HOME}
 
 COPY requirements.txt ./requirements.txt
@@ -13,4 +14,4 @@ EXPOSE 80
 
 # CMD python pnl_etoro.py
 
-CMD gunicorn -b 0.0.0.0:80 pnl_etoro:server
+CMD gunicorn -b 0.0.0.0:$PORT pnl_etoro:server
