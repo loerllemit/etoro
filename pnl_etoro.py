@@ -159,7 +159,7 @@ fig_loss.update_traces(showlegend=False,textposition = 'outside',hovertemplate =
 # fig_loss.show()
 
 # %%
-fig_most_traded = px.pie(values=most_traded['counts'], names=most_traded['Details'],title="Most Traded Crypto",hole=.3)
+fig_most_traded = px.pie(values=most_traded['counts'], names=most_traded['Details'],title="Most Traded Asset",hole=.3)
 fig_most_traded.update_layout(showlegend=True,title_x=0.5,plot_bgcolor =  "rgba(0,0,0,0)",paper_bgcolor =  "rgba(0,0,0,0)",                        font_color ='#7FDBFF')
 fig_most_traded.update_traces(scalegroup='one',textposition='inside')
 # fig_most_traded.show()
